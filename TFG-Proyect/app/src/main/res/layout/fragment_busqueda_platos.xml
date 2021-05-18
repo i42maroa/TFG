@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".UI.PlatosUI.FragmentsPlatos.MainFragments.SearchMainFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.5"
+
+            android:text="Ingredientes:"
+            android:paddingLeft="10dp"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorPrimaryDark"
+/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.5">
+
+            <TextView
+                android:id="@+id/fragmentBusquedaTextListIngredientes"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_weight="0.5"
+                android:text="Ingredientes a introducir"
+                android:paddingLeft="5dp"
+                android:textStyle="italic"
+                android:padding="10dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+
+                <Button
+                    android:id="@+id/fragmentBusquedaButtonAddIngrediente"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#FFFF"
+                    android:text="+"
+                    android:layout_marginRight="10dp"
+                    />
+
+                <Button
+                    android:id="@+id/fragmentBusquedaButtonEliminarIngrediente"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="-"
+
+                    android:textColor="#FFFF"
+                    />
+
+                </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.5"
+            android:paddingLeft="10dp"
+            android:text="Calorías:"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorPrimaryDark"
+/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.5">
+
+            <SeekBar
+                android:id="@+id/fragmentBusquedaSeekBarCal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:min="0"
+                android:max="1000"
+                android:layout_weight="0.5"/>
+
+            <TextView
+                android:id="@+id/fragmentBusquedaTextViewCal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100 cal"
+                android:layout_gravity="center_horizontal"
+                android:textStyle="italic"
+                android:padding="2dp"
+                android:layout_weight="0.5"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_gravity="center_vertical"
+            android:text="Tiempo:"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorPrimaryDark"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.5"
+            >
+
+            <SeekBar
+                android:id="@+id/fragmentBusquedaSeekBarTiempo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                />
+
+            <TextView
+                android:id="@+id/fragmentBusquedaTextViewTiempo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10 min "
+                android:layout_gravity="center_horizontal"
+                android:textStyle="italic"
+                android:padding="2dp"
+                android:layout_weight="0.5"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.5"
+            android:text="Dificultad:"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorPrimaryDark"
+        />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.5">
+
+            <SeekBar
+                android:id="@+id/fragmentBusquedaSeekBarDificultad"
+                style="@style/Widget.AppCompat.SeekBar.Discrete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:max="2"
+                android:progress="0" />
+
+            <TextView
+                android:id="@+id/fragmentBusquedaTextViewDificultad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fácil"
+                android:layout_gravity="center_horizontal"
+                android:textStyle="italic"
+                android:padding="2dp"
+
+                android:layout_weight="0.5"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/fragmentBusquedaButtonBuscar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="BUSCAR"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+
+        android:textColor="#FFFF"
+        android:padding="10dp"
+        android:textStyle="bold"
+        />
+
+
+</LinearLayout>

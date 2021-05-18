@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/dialogModUsuarioEditNombreTL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre"
+            app:errorEnabled="true"
+            android:layout_margin="10dp"
+            android:layout_weight="0.8"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/dialogModUsuarioEditNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/dialogImageHombre"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.2"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/male"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:clickable="true"
+            />
+
+    </LinearLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dialogModUsuarioEdiEdadTL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Fecha nacimiento"
+        app:errorEnabled="true"
+        android:layout_margin="5dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dialogModUsuarioEdiEdad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:focusable="false"
+            android:clickable="true"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/dialogModUsuarioEditAlturaTL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:hint="Altura"
+            app:errorEnabled="true"
+            android:layout_margin="5dp"
+            app:helperText="Metros (m)">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/dialogModUsuarioEditAltura"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/dialogModUsuarioEditPesoTL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:hint="Peso"
+            app:errorEnabled="true"
+            android:layout_margin="5dp"
+            app:helperText="Kilos (kg)">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/dialogModUsuarioEditPeso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dialogModUsuarioEditCorreoTL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Correo"
+        app:errorEnabled="true"
+        android:layout_margin="5dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dialogModUsuarioEditCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+</LinearLayout>

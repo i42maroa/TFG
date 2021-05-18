@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+    android:id="@+id/cardViewFranjaHorario"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="#E2E2E2"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:layout_margin="16dp"
+    card_view:cardCornerRadius="10dp">
+
+    <FrameLayout
+        android:id="@+id/linearLayoutFondo"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:id="@+id/cardViewFranjaHorarioItemImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+>
+        </ImageView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewFranjaHorarioItemPlatos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            android:layout_gravity="top|center"
+            android:paddingTop="10dp"/>
+    </FrameLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="vertical"
+        android:layout_gravity="bottom">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorPrimary"/>
+
+            <TextView
+                android:id="@+id/textViewFranjaHorarioItem"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="5dp"
+                android:paddingLeft="5dp"
+                android:layout_centerVertical="true"
+                android:text="DESAYUNO"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                />
+
+                <Button
+                    android:id="@+id/cardViewFranjaHorarioButtonAdd"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:text="+"
+                    android:textColor="#FFFF"
+                    android:background="@color/colorAccent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

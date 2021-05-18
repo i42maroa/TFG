@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">TFG</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="pasos_a_realizar">PASOS A REALIZAR</string>
+
+    <string name="info_infrapeso">Deberías realizar una mayor injesta de alimenta ya que se encuentra por debajo de su peso.</string>
+    <string name="info_peso_normal"> Estás dentro del rango de peso saludable, sigue así. </string>
+    <string name="info_sobrepeso">Es aconsejable empezar a construir hábitos saludables, como comer saludablemente y ser más activo. Puedes tener exceso de grasa o una gran cantidad de músculo. </string>
+    <string name="info_obesidad">Es necesario comenzar a llevar un estilo de vida saludable comiendo de forma saludable y estando activo ya que se encuentra en peligro su salud.</string>
+
+    <string-array name="tipos_cantidad">
+        <item>Pieza</item>
+        <item>Cucharada</item>
+        <item>Vaso</item>
+        <item>Mitad</item>
+        <item>Gramos</item>
+    </string-array>
+
+    <string-array name="tipos_dificultad">
+    <item>Fácil</item>
+    <item>Media</item>
+    <item>Difícil</item>
+    </string-array>
+
+    <string-array name="tipos_pasos">
+        <item>Partir</item>
+        <item>Hornear</item>
+        <item>Lavar</item>
+        <item>Sazonar</item>
+        <item>Freir</item>
+        <item>Cocer</item>
+        <item>Batir</item>
+        <item>Emplatar</item>
+    </string-array>
+</resources>

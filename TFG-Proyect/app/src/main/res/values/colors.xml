@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#009688</color>
+    <color name="colorPrimaryDark">#00796B</color>
+    <color name="colorPrimaryLight">#B2DFDB</color>
+    <color name="colorAccent">#7C4DFF</color>
+    <color name="colorPrimaryText">#212121</color>
+    <color name="colorSecondaryText">#757575</color>
+    <color name="colorIcons">#FFFFFF</color>
+    <color name="colorDivider">#BDBDBD</color>
+    <color name="colorFranjaRojo">#F78181</color>
+    <color name="colorFranjaNaranja">#FEA82D</color>
+    <color name="colorFranjaVerde">#6DFD9C</color>
+    <color name="franjaVacia">#BDBDBD</color>
+
+    <color name="colCalorias">#7C4DFF</color>
+    <color name="colProteinas"> #33B5E5</color>
+    <color name="colHidratos"> #99CC00</color>
+    <color name="colGrasas"> #FFBB33</color>
+    <color name="colSal">#757575</color>
+
+
+</resources>

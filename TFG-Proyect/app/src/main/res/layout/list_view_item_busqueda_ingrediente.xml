@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="74dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="7dp"
+        >
+        <ImageView
+            android:id="@+id/listViewItemBusquedaIngredienteImageView"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.2"
+            android:padding="5dp"
+            />
+
+        <TextView
+            android:id="@+id/listViewItemBusquedaIngredienteTextView"
+            android:layout_width="0dp"
+            android:layout_weight="0.6"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:textSize="18dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"/>
+
+
+
+    </LinearLayout>
+</LinearLayout>

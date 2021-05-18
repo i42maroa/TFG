@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:fillViewport="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/fragmentIngredienteUnicoImageView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:paddingTop="5dp"
+            />
+
+        <TextView
+            android:id="@+id/fragmentIngredienteUnicoTextViewNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_gravity="center"
+            android:paddingTop="10dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            />
+
+
+        <TextView
+            android:id="@+id/fragmentIngredienteUnicoTextViewCategoria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_gravity="center"
+            android:paddingTop="10dp"
+            android:textStyle="italic"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VALORES NUTRICIONALES"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_gravity="center"
+            android:paddingTop="20dp"
+            android:textColor="@color/colorAccent"
+            />
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(100 g)"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_gravity="center"
+            android:paddingTop="5dp"
+            android:textColor="@color/colorAccent"
+            />
+        <include layout="@layout/list_view_item_val_nut"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/fIngredienteUnicoRVVN"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+        </androidx.recyclerview.widget.RecyclerView>
+        
+        <FrameLayout
+            android:padding="20dp"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center">
+            <lecho.lib.hellocharts.view.PieChartView
+                android:id="@+id/piechartIngredient"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+            </lecho.lib.hellocharts.view.PieChartView>
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+</androidx.core.widget.NestedScrollView>

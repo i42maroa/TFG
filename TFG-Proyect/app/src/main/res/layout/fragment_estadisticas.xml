@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:fillViewport="true"
+    tools:context=".Sistems.SistemaPerfil.Fragments.EstadisticasFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:layout_gravity="center"
+
+            >
+
+            <ImageButton
+                android:id="@+id/estadisticasMenMes"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:background="@android:color/transparent"/>
+
+            <TextView
+                android:id="@+id/estadisticasTextViewMesSelec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/colorAccent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:padding="5dp"/>
+
+            <ImageButton
+                android:id="@+id/estadisticasMasMes"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+
+                android:padding="5dp"
+                android:background="@android:color/transparent"
+
+             />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent"
+            />
+
+
+        <TextView
+            android:id="@+id/estadisticasTextViewAnioSelec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/colorAccent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:paddingBottom="10dp"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <lecho.lib.hellocharts.view.ColumnChartView
+                android:id="@+id/columChart"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" >
+            </lecho.lib.hellocharts.view.ColumnChartView>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            >
+
+            <lecho.lib.hellocharts.view.LineChartView
+                android:id="@+id/lineChartView"
+                android:layout_width="match_parent"
+                android:layout_height="150dp" >
+            </lecho.lib.hellocharts.view.LineChartView>
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Calorías totales mes"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAlignment="center"
+                />
+
+            <TextView
+                android:id="@+id/texViewCalTotal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Dia mas calórico"
+                android:textStyle="italic"
+                android:paddingLeft="10dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textAlignment="center"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Media calorÍas diarias"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAlignment="center"
+                />
+
+            <TextView
+                android:id="@+id/texViewMedCaloMes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Dia mas calórico"
+                android:textStyle="italic"
+                android:paddingLeft="10dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="0.5"
+                android:text="Dia mas calórico"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAlignment="center"
+                />
+
+            <TextView
+                android:id="@+id/texViewMasCalorico"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="0.5"
+                android:text="Dia mas calórico"
+                android:textStyle="italic"
+                android:paddingLeft="10dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textAlignment="center"
+                />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

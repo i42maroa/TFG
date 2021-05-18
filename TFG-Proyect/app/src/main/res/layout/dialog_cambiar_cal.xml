@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.6"
+            android:paddingLeft="10dp"
+            android:text="Cal. desayuno:"
+
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorPrimaryDark"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.5">
+
+            <SeekBar
+                android:id="@+id/dialogSeekBarCalDes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:min="0"
+                android:max="1000"
+                android:layout_weight="0.5"/>
+
+            <TextView
+                android:id="@+id/dialogTextViewCalDes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100 cal"
+                android:layout_gravity="center_horizontal"
+                android:textStyle="italic"
+                android:padding="2dp"
+                android:layout_weight="0.5"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.6"
+            android:paddingLeft="10dp"
+            android:text="Cal. almuerzo:"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorPrimaryDark"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.5">
+
+            <SeekBar
+                android:id="@+id/dialogSeekBarCalAlm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:min="0"
+                android:max="1000"
+                android:layout_weight="0.5"/>
+
+            <TextView
+                android:id="@+id/dialogTextViewCalAl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100 cal"
+                android:layout_gravity="center_horizontal"
+                android:textStyle="italic"
+                android:padding="2dp"
+                android:layout_weight="0.5"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.6"
+            android:paddingLeft="10dp"
+            android:text="Cal. cena:"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorPrimaryDark"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.5">
+
+            <SeekBar
+                android:id="@+id/dialogSeekBarCalCena"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:min="0"
+                android:max="1000"
+                android:layout_weight="0.5"/>
+
+            <TextView
+                android:id="@+id/dialogTextViewCalCena"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100 cal"
+                android:layout_gravity="center_horizontal"
+                android:textStyle="italic"
+                android:padding="2dp"
+                android:layout_weight="0.5"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.6"
+            android:paddingLeft="10dp"
+            android:text="Cal. complemento:"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorPrimaryDark"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.5">
+
+            <SeekBar
+                android:id="@+id/dialogSeekBarCalCom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:min="0"
+                android:max="1000"
+                android:layout_weight="0.5"/>
+
+            <TextView
+                android:id="@+id/dialogTextViewCalComp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100 cal"
+                android:layout_gravity="center_horizontal"
+                android:textStyle="italic"
+                android:padding="2dp"
+                android:layout_weight="0.5"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.6"
+            android:padding="10dp"
+            android:text="Cal. totales diarias:"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorAccent"
+            />
+        <TextView
+            android:id="@+id/dialogTextViewCalTo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="100 cal"
+            android:layout_weight="0.6"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/dialogCalBotom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="CALORÍAS PREDETERMINADAS"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textStyle="bold"
+        />
+
+</LinearLayout>

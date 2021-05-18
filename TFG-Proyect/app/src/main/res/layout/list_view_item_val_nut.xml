@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="5dp"
+    >
+
+    <TextView
+        android:id="@+id/textViewItemVNParametro"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:textStyle="bold"
+        android:text="Calorias"
+        android:padding="5dp"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/textViewItemVNValor"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:text="120 cal"
+        android:padding="5dp"
+        android:layout_gravity="center"
+        android:textAlignment="center"/>
+
+
+
+</LinearLayout>

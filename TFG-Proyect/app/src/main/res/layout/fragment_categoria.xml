@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".UI.PlatosUI.FragmentsPlatos.SecondaryFragment.ListCategoryMainFragment">
+
+
+    <FrameLayout
+        android:id="@+id/fragmentCategoriaId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/fragmentCategoriaRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fragmentListPlatosAddPlat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="5dp"
+            app:fabSize="normal"
+            app:layout_anchorGravity="top|end"
+            app:layout_behavior="io.anycopy.googleplusdemo.BottomNavigationFABBehavior"
+            app:srcCompat="@drawable/ic_add_white_24dp"
+            app:useCompatPadding="true" />
+    </FrameLayout>
+</FrameLayout>
